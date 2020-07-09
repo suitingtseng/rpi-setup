@@ -33,9 +33,9 @@ sudo sh <( wget -O - https://code.headmelted.com/installers/apt.sh )
 
 # install dotfiles
 git clone https://github.com/suitingtseng/dotfiles.git ~/dotfiles
-mv ~/dotfiles/.gitconfig ~/
-mv ~/dotfiles/.bashrc ~/
-mv ~/dotfiles/.profile ~/
+cp ~/dotfiles/.gitconfig ~/
+cp ~/dotfiles/.bashrc ~/
+cp ~/dotfiles/.profile ~/
 
 # install rust
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
